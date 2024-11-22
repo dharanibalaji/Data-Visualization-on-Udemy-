@@ -1,0 +1,1304 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='udemy_courses_dataset+ (udemy dataset excel)' inline='true' name='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='udemy dataset excel' name='excel-direct.09venob0fzgcap153c01s1g3zf40'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/gdhar/Downloads/udemy dataset excel.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.09venob0fzgcap153c01s1g3zf40' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D3679:no:A1:D3679:0' header='yes' outcome='2'>
+            <column datatype='integer' name='course_id' ordinal='0' />
+            <column datatype='string' name='url' ordinal='1' />
+            <column datatype='integer' name='price' ordinal='2' />
+            <column datatype='string' name='subject' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.09venob0fzgcap153c01s1g3zf40' name='udemy_courses_dataset' table='[udemy_courses_dataset$]' type='table'>
+            <columns gridOrigin='A1:L3679:no:A1:L3679:0' header='yes' outcome='6'>
+              <column datatype='integer' name='course_id' ordinal='0' />
+              <column datatype='string' name='course_title' ordinal='1' />
+              <column datatype='string' name='url' ordinal='2' />
+              <column datatype='boolean' name='is_paid' ordinal='3' />
+              <column datatype='integer' name='price' ordinal='4' />
+              <column datatype='integer' name='num_subscribers' ordinal='5' />
+              <column datatype='integer' name='num_reviews' ordinal='6' />
+              <column datatype='integer' name='num_lectures' ordinal='7' />
+              <column datatype='string' name='level' ordinal='8' />
+              <column datatype='real' name='content_duration' ordinal='9' />
+              <column datatype='string' name='published_timestamp' ordinal='10' />
+              <column datatype='string' name='subject' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.09venob0fzgcap153c01s1g3zf40' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:D3679:no:A1:D3679:0' header='yes' outcome='2'>
+              <column datatype='integer' name='course_id' ordinal='0' />
+              <column datatype='string' name='url' ordinal='1' />
+              <column datatype='integer' name='price' ordinal='2' />
+              <column datatype='string' name='subject' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[content_duration]' value='[udemy_courses_dataset].[content_duration]' />
+          <map key='[course_id (Sheet1)]' value='[Sheet1].[course_id]' />
+          <map key='[course_id]' value='[udemy_courses_dataset].[course_id]' />
+          <map key='[course_title]' value='[udemy_courses_dataset].[course_title]' />
+          <map key='[is_paid]' value='[udemy_courses_dataset].[is_paid]' />
+          <map key='[level]' value='[udemy_courses_dataset].[level]' />
+          <map key='[num_lectures]' value='[udemy_courses_dataset].[num_lectures]' />
+          <map key='[num_reviews]' value='[udemy_courses_dataset].[num_reviews]' />
+          <map key='[num_subscribers]' value='[udemy_courses_dataset].[num_subscribers]' />
+          <map key='[price (Sheet1)]' value='[Sheet1].[price]' />
+          <map key='[price]' value='[udemy_courses_dataset].[price]' />
+          <map key='[published_timestamp]' value='[udemy_courses_dataset].[published_timestamp]' />
+          <map key='[subject (Sheet1)]' value='[Sheet1].[subject]' />
+          <map key='[subject]' value='[udemy_courses_dataset].[subject]' />
+          <map key='[url (Sheet1)]' value='[Sheet1].[url]' />
+          <map key='[url]' value='[udemy_courses_dataset].[url]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L3679:no:A1:L3679:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D3679:no:A1:D3679:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>course_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[course_id]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>course_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>course_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[course_title]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>course_title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_paid</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_paid]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>is_paid</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_subscribers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_subscribers]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>num_subscribers</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_reviews]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>num_reviews</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_lectures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_lectures]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>num_lectures</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[level]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>level</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>content_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[content_duration]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>content_duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>published_timestamp</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[published_timestamp]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>published_timestamp</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject]</local-name>
+            <parent-name>[udemy_courses_dataset]</parent-name>
+            <remote-alias>subject</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>course_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[course_id (Sheet1)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>course_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[url (Sheet1)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price (Sheet1)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject (Sheet1)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>subject</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='([Level])' datatype='string' name='[Calculation_499055150600839168]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='([level])' />
+      </column>
+      <column datatype='integer' name='[Price (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[price]' peg='0' size='18.1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='udemy_courses_dataset' datatype='table' name='[__tableau_internal_object_id__].[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]' role='measure' type='quantitative' />
+      <column caption='Content Duration' datatype='real' name='[content_duration]' role='measure' type='quantitative' />
+      <column caption='course id (Sheet1)' datatype='integer' name='[course_id (Sheet1)]' role='dimension' type='ordinal' />
+      <column caption='Course Id' datatype='integer' name='[course_id]' role='dimension' type='ordinal' />
+      <column caption='Course Title' datatype='string' name='[course_title]' role='dimension' type='nominal' />
+      <column caption='Is Paid' datatype='boolean' name='[is_paid]' role='dimension' type='nominal' />
+      <column caption='Level' datatype='string' name='[level]' role='dimension' type='nominal' />
+      <column caption='Num Lectures' datatype='integer' name='[num_lectures]' role='measure' type='quantitative' />
+      <column caption='Num Reviews' datatype='integer' name='[num_reviews]' role='measure' type='quantitative' />
+      <column caption='Num Subscribers' datatype='integer' name='[num_subscribers]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Published Timestamp' datatype='string' name='[published_timestamp]' role='dimension' type='nominal' />
+      <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column-instance column='[level]' derivation='None' name='[none:level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/gdhar/AppData/Local/Temp/TableauTemp/#TableauTemp_0k7pkkp0bqryuj1f7h7pe0epodmj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/21/2024 07:50:02 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC' table='[Extract].[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3' table='[Extract].[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]' type='table' />
+            <relation name='Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC' table='[Extract].[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[content_duration]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[content_duration]' />
+            <map key='[course_id (Sheet1)]' value='[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC].[course_id]' />
+            <map key='[course_id]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[course_id]' />
+            <map key='[course_title]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[course_title]' />
+            <map key='[is_paid]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[is_paid]' />
+            <map key='[level]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[level]' />
+            <map key='[num_lectures]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[num_lectures]' />
+            <map key='[num_reviews]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[num_reviews]' />
+            <map key='[num_subscribers]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[num_subscribers]' />
+            <map key='[price (Sheet1)]' value='[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC].[price]' />
+            <map key='[price]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[price]' />
+            <map key='[published_timestamp]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[published_timestamp]' />
+            <map key='[subject (Sheet1)]' value='[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC].[subject]' />
+            <map key='[subject]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[subject]' />
+            <map key='[url (Sheet1)]' value='[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC].[url]' />
+            <map key='[url]' value='[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3].[url]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>course_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[course_id]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>course_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3575</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>course_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[course_title]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>course_title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>2</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_paid</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_paid]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>is_paid</remote-alias>
+              <ordinal>3</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>4</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_subscribers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_subscribers]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>num_subscribers</remote-alias>
+              <ordinal>5</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1457</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_reviews]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>num_reviews</remote-alias>
+              <ordinal>6</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>404</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_lectures</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_lectures]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>num_lectures</remote-alias>
+              <ordinal>7</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[level]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>level</remote-alias>
+              <ordinal>8</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>content_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[content_duration]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>content_duration</remote-alias>
+              <ordinal>9</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>published_timestamp</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[published_timestamp]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>published_timestamp</remote-alias>
+              <ordinal>10</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subject]</local-name>
+              <parent-name>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</parent-name>
+              <remote-alias>subject</remote-alias>
+              <ordinal>11</ordinal>
+              <family>udemy_courses_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>course_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[course_id (Sheet1)]</local-name>
+              <parent-name>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</parent-name>
+              <remote-alias>course_id</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3575</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url (Sheet1)]</local-name>
+              <parent-name>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price (Sheet1)]</local-name>
+              <parent-name>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subject (Sheet1)]</local-name>
+              <parent-name>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</parent-name>
+              <remote-alias>subject</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:level:nk]' palette='sf_sunrise' type='palette'>
+            <map to='#ce6716'>
+              <bucket>&quot;Intermediate Level&quot;</bucket>
+            </map>
+            <map to='#f59623'>
+              <bucket>&quot;Expert Level&quot;</bucket>
+            </map>
+            <map to='#f5c062'>
+              <bucket>&quot;Beginner Level&quot;</bucket>
+            </map>
+            <map to='#f5de98'>
+              <bucket>&quot;All Levels&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:subject:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Business Finance&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Graphic Design&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Musical Instruments&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Web Development&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC'>
+            <properties context=''>
+              <relation connection='excel-direct.09venob0fzgcap153c01s1g3zf40' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D3679:no:A1:D3679:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='course_id' ordinal='0' />
+                  <column datatype='string' name='url' ordinal='1' />
+                  <column datatype='integer' name='price' ordinal='2' />
+                  <column datatype='string' name='subject' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC' table='[Extract].[Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC]' type='table' />
+            </properties>
+          </object>
+          <object caption='udemy_courses_dataset' id='udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3'>
+            <properties context=''>
+              <relation connection='excel-direct.09venob0fzgcap153c01s1g3zf40' name='udemy_courses_dataset' table='[udemy_courses_dataset$]' type='table'>
+                <columns gridOrigin='A1:L3679:no:A1:L3679:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='course_id' ordinal='0' />
+                  <column datatype='string' name='course_title' ordinal='1' />
+                  <column datatype='string' name='url' ordinal='2' />
+                  <column datatype='boolean' name='is_paid' ordinal='3' />
+                  <column datatype='integer' name='price' ordinal='4' />
+                  <column datatype='integer' name='num_subscribers' ordinal='5' />
+                  <column datatype='integer' name='num_reviews' ordinal='6' />
+                  <column datatype='integer' name='num_lectures' ordinal='7' />
+                  <column datatype='string' name='level' ordinal='8' />
+                  <column datatype='real' name='content_duration' ordinal='9' />
+                  <column datatype='string' name='published_timestamp' ordinal='10' />
+                  <column datatype='string' name='subject' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3' table='[Extract].[udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[course_id]' />
+              <expression op='[course_id (Sheet1)]' />
+            </expression>
+            <first-end-point object-id='udemy!courses!dataset_0C27B85A989A46C89913D9C78DD095F3' />
+            <second-end-point object-id='Sheet1_C3658828953C4FF19DFAFEF26AF2A3FC' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Price and Subject'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Price,Subject and Subscribers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='udemy_courses_dataset+ (udemy dataset excel)' name='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo'>
+            <column caption='Level' datatype='string' name='[level]' role='dimension' type='nominal' />
+            <column-instance column='[level]' derivation='None' name='[none:level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Web Development&quot;</bucket>
+              <bucket>&quot;Business Finance&quot;</bucket>
+              <bucket>&quot;Graphic Design&quot;</bucket>
+              <bucket>&quot;Musical Instruments&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:level:nk]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6701657772064209' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[sum:price:qk]</rows>
+        <cols>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]</cols>
+      </table>
+      <simple-id uuid='{AA420EE0-F9AD-4E8F-84B6-4E03A32267FB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='udemy_courses_dataset+ (udemy dataset excel)' name='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo'>
+            <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+            <column caption='Num Subscribers' datatype='integer' name='[num_subscribers]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+            <column-instance column='[num_subscribers]' derivation='Sum' name='[sum:num_subscribers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[sum:num_subscribers:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[sum:num_subscribers:qk]</rows>
+        <cols>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]</cols>
+      </table>
+      <simple-id uuid='{3CC19265-BBF0-40AC-9C50-0633821AB9BC}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='udemy_courses_dataset+ (udemy dataset excel)' name='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo'>
+            <column caption='([Level])' datatype='string' name='[Calculation_499055150600839168]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='([level])' />
+            </column>
+            <column-instance column='[Calculation_499055150600839168]' derivation='Attribute' name='[attr:Calculation_499055150600839168:nk]' pivot='key' type='nominal' />
+            <column caption='Level' datatype='string' name='[level]' role='dimension' type='nominal' />
+            <column-instance column='[level]' derivation='None' name='[none:level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+            <column caption='Num Reviews' datatype='integer' name='[num_reviews]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+            <column-instance column='[num_reviews]' derivation='Sum' name='[sum:num_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='144' />
+            <format attr='cell-h' value='144' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+            <format attr='text-orientation' field='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='background-color' field='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:level:nk]' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='background-color' data-class='total' value='#000000' />
+            <format attr='background-color' data-class='subtotal' value='#000000' />
+            <format attr='background-color' field='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='background-color' data-class='total' value='#000000' />
+            <format attr='background-color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]' />
+              <size column='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[sum:num_reviews:qk]' />
+              <tooltip column='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[attr:Calculation_499055150600839168:nk]' />
+              <text column='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:level:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4172928333282471' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DBF5C667-1D49-47B7-8310-FE8C40819923}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <show-full-range>
+          <column>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[Price (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{C0CF1366-2C37-4B69-800A-6C262F3CE3C5}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Price and Subject'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:course_title:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:is_paid:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:level:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:published_timestamp:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{90923A34-E01A-4DBF-8A24-656229AA8DEC}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:course_title:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B4D017B8-4DAE-4144-9125-56E9417D3F41}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[sum:num_reviews:qk]' type='size' />
+            <card param='[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:level:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[attr:Calculation_499055150600839168:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:course_title:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:published_timestamp:nk]</field>
+            <field>[federated.1rfdw4d0dl9i8e1bqrm9s08jlvwo].[none:subject:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F5E3E9E8-5363-4BCA-B2BF-79DDA9E4EA20}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7318AF08-DFA8-4827-ADEE-77057F7330C8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Price and Subject' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      NrFNPwcQn/p/BtcI/7KOaQ4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAQfElEQVR4nO3d6XcUV3rH8W9V7+puSa0ddWtDSEISwmzGCMZjeyaZk+PJSd5kzmRyknf5
+      q/Ji3uTEOZmTTBzPeCFOgGE8NkMYsNkREkIsRvuubvVWNy8K2cgWIKGuvt1dz+fAQae7+uqR
+      qF8tt27dMpRSCiFcytRdgBA6SQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISr
+      SQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kA
+      hKtJAISrSQDKWpprl0fIZbNksllGR0fIZnNkM2nylkU+lyOXy5FOp8lk0uQtRSaTxrIU2WyG
+      2zdvMzc3Qz5nf35i7C7JdJZcNkMubwEZrl+9BSjS6TT5vIVSirxlkUnb7Vy7dln3L2FXvLoL
+      ELthsbqc5NOP30eFalmaeozKZ/ng/Q9IDB7Bv7JEa3s9kzPLmIEA1b4IFy59Rs+BQ4R8fkzD
+      x+LCHAGSnP7iLvvbq9lnGZx7/98Jxvv4x797l9WVNeYe3OGf3vtPBgcGaN/Xz8KDEb64cp2h
+      42/TULXu+E+5MjPO+esz/HCwgfFlg5Cqoql6lRmjhe7GEJlMFq/Xi2maWJZFLpcjtTjJkorR
+      XOvHHwhgGsaWbUsAypxpGiQ6e1AGxIIm2bxF9/4DDA7tZ30hSU1VmubmdjLBAAsjD+gbPMTQ
+      /m5u3LpHMBTANE1m5pJ0xRto62gll8vRvrePvUOHABi9fRW/t58Dh45x5MgxPj/9Pj945y0W
+      sj6G+ruZenjL8Z/x5shjwqZFJpNiNWmgLC+5QIqkaXH5s0/55Pwljhw9QVdHE6Oj97l69StO
+      vfVDqoLznP7wJj//xc+oqfJv2bYhk+MKxygF2KuXpeyvDAwMA4znbJG/30SeTz78LeGgj0Ck
+      BhWpI2xFidcu8MHFx3Q3BcgpP4cO9vJfH55l+OBeHs4l6WqNkbIijN24QN8bf8b+tsYt25cA
+      iFejFFg5WF+E9QVILUB6GTKrkF2D3DrkM/YyyuKDiRgfPqzH6zHx+zyEAl6iIT814SCxaJCm
+      WJiW+ih76iJEq/x4Pea2Q7IbcggkXk4psLKwOgnLj2Dla/vr1IL9+jasrniYnA9sa9lIyE9b
+      UzV7W2N0t8boSdTT2hDFY5oUOhMSALE1Kw9rUzA/CvNjsPLY3qIXwWoqw62JWW5NzH7zWl11
+      iIGOBob2NnOkdw8NNVWY5u7TIIdA4ltW3t7CT1+3V/z1BVBWQZp+b6yRf7u39XH4TpkG7G2t
+      43h/K8ODbSQaq185DBIAt1MKUnPw5ApMXYX0kiPfppABeJYB9LTV8/ahTk4NtVETDuzo3EEC
+      4FZWHubuwOOLsDDORm+NU5wKwLMCPg+nhtr56XAPe1tjz+37f5YEwG1yaZj6Ch5dgOTsy5cv
+      kGIEYIMBDHU389c/6ONwTwse8/kDHuQk2C3yGXhyGR58ZndXVjAFXLs3xdWxKXoSdfzs7QGO
+      7W/dMgiyB6h0Vt4+tr9/zj6p1aSYe4CtDHQ28vc/OchAR8OmcwQJQKVSCpYfwuhp+1/NdAcA
+      wDDgzYMd/MNPDtJYW4VhGHIIVJGySRj7FCavFKwbsxIoBee/muDSna/52x8N8u6JHglAoeWy
+      GZKpNOFIBM93+qZzuRxe78t/5S9b7rnvKwVzt2HkI8e6MytBcj3LLz/6ks+vP5QAFNrlyxcx
+      8ZA0q2gMWjS297I8Oc66J0rQB1G/lweT8+ztaOX++H32HzjArevX6OnvZ+bx1+zp7ObyxUuc
+      OvUGE6O3MavqCFeFwMqRWp4j7almauwew28Pb/7GuXW4+zFMfonTXZqV4vaDOQlAoSkrz9Ja
+      knAoxR9uztIxPU9NTQNrmccYhkEwp6j1B7gyOspQRyNnfv0RqbCH5XQSI1/H3h67p8LKrHLu
+      80vUN8VpqA5imIqxO2OEGpppCVc/8w2VPTbn1q8hOaPppy5fEoACq6muIbU+T7QhQcdymq7u
+      Xh7evcFkSnGgt4uIL0gVipxpUF1dzb7BXsanp9nb3oHPEwNApVf48vYDuhItxFo7CWbnMerb
+      sdJpgvVxQhv9FkrB15dg9JNtD0oTm0kvkMOUsvjy/74g0tRJT2e8cA3nszB22r6SWwZKoRdo
+      K7IHcJhhmBw+fqqwjWbW4MavYHG8sO26kASg3KQW4Np79lBlsWsSgHKyOmmv/OuLuiupGBKA
+      crHyBK7+s33LoSgYmReoHMjK7xgJQKlbm5aV30ESgFK2vghX/0VWfgdJAEpVNvn0hFffEGY3
+      kACUIisHN//D7vURjpIAlBql4N7/wPxd3ZW4ggSglChlj+Z8+IXuSlxDAlBK1qbh7kfIcObi
+      kQCUilzaHtKcT+uuxFUkAKVAKRj/X1h9orsS15EAlILF+2UzrLnSSAB0y6Vh5Ddy87omEgCd
+      lIKJ80WdoU1sJgHQKTkDj6TLUxe/3yfDobVRlj1plZXTXYkrhUIBhoeHJADazI/K1V5NotEq
+      hoeHiESqJABaWHkYP6O7CleKxaIMnxgiGLIf1yQB0GHmpj2XjyiqpqYYx48P4vf7vnlNAlBs
+      Vh4e/kF3Fa4Tjzdy9Gg/Xq9n0+sSgGKbvytb/yLr6mrltdd6MLd4PoAEoJiUBQ9k619MfX0d
+      DPR3YTznIXoSgGJafgRLE7qrcAXDMBg60E33vsQLH5onASiWjXk8heNM0+Tw4V462lt42ZO1
+      JQDFkkvZvT/CUV6vh9dfH2DPnobtLe9wPWLD1LWiPWndrfx+HydOHKChoWbbn5EAFIOynj64
+      QjhlY2hDbW10R5+TABTD+qJ0fRaYwbc3jtpDGw4SiYR23I4EoBhmbiH3+RbWxm8zFosyPDxE
+      MBh4pXYkAE5TSk5+HbLV0IadkgA4LbsGK491V1FxEokmjhzZ/72hDTslAXDawrjc7lhgLxra
+      sFMSAKct3NNdQUXp6+tgYKDrhVd3d0IC4CRlyXO8CsQwDIaGuunufvHQBpvC7id6OQmAkzIr
+      kJrXXUXZs4c29NHR0fKCpZ5d6be/d5AAOGlZTn53a6dDG3bcviOtCptc/NoVv9/H8PAB6utr
+      t7H09rf6hrKoXZ8gMfs7CYBjlJL5/XchFApw8uRBamoihWlQKaozT4jP/p747DmiK6MYypIA
+      OEfJhFevKBqt4uTJg4TDOx/asIlShHNzxOc+Jz5zltrlWxhWdtMiEgCn5LPyPN9XEItVMzx8
+      4JWHNoAimFumdeEiiZkz1C1+hfmCGbclAE5JL8kFsB1qaqrj+PGBVxra4M8naVm6TGLmDA3z
+      l/Dm1rb1OQmAU2TrvyOJRBNHj+7H49n+0AavlaZp5TptM2domruAL7Pz37kEwCnpZd0VlI2d
+      DG0wVZaG1RHaZs/SMvsHAuvTu/reEgCnpFd0V1AW9u/vpL+/84VXdw2VJ5a6T2LmHPHZ8wST
+      j3bQ6fliEgCnZJO6Kyhp9tCGfXR3x7de+ZVFdfoxidnzxGd+R2RtHMOBcyoJgFNy67orKFmm
+      aXLkSB/tbS2br18pRVVmhvj8ZySmz1K7MoKhnJ09WwLgFHnY3Za8Xg/Hjw/S0lL/9BVFILPI
+      noULtM2coW7pOh6reJMHSACcks++fBmXMU2DU6deo76+Gl9ulaaFS3YPzuJlvPmUlpokAE6R
+      awCb+Dwmrx/tZcC4TdudM7TMX8Sf099TZiil5G5tJ1z5pf30RwFAKmeSza4TWp8GlD1WCvX0
+      z9NVUG28bn3zvr12Pru8euY99f33nm3zm1VbbWr72TZlD+AUY3f3qlaakNci5PVDKKG7lE3k
+      IXlOMWXbUg4kAE4xZQ9QDiQATvEGdVcgtkEC4BRfle4KxDZIAJwiASgLEgCn+MO6KxDbIAFw
+      SjCmuwKxDRIApwS3M5OB0E0C4BR/BMxXn7VYFIcEwCmGB6rqX76c0EoC4BTDgHCT7irES0gA
+      nBRu1l2BeAkJgJOicd0ViJeQADipulVGhZY4CYCTPAGIyGFQKZMAOMkwoKZDdxXiBSQATqvb
+      p7sC8QISAKfVtIPHr7sK8RwSAKd5/FDbqbsK8RwSAKcZBjQO6K5CPIcEoBjq+2RcUImSABSD
+      rwpie3VXIbYgASgGw4CWQ7qrEFuQABRLfS/4o7qrEN8hASgWjw9aXtNdhfgOCUAxtR6TsUEl
+      RgJQTMEYNPbrrkI8QwJQTIYBbSd1VyGeIQEotmgc6np0VyGekgAUm2FA59tQsMe8id2QAOhQ
+      nYCGPt1VCCQAehgGdP1YplAvARIAXcJNdreo0EoCoIthQMdb4IvorsTVJAA6+cOw7891V+Fq
+      EgDdml+TblGNJAC6GSb0vCtPlNFEAlAKQnWw7y90V+FKEoBSsHG/QNMB3ZW4jgSgVBgm9PwU
+      QjKjdDFJAEqJPwwDfyPTqBSRBKDURFvtPYGMFSoKCUCp2Tgf6HhTdyWuIAEoRYYBne9A80Hd
+      lVQ8CUCpMj3Q91dQ1627koomAShlHj8M/lxmmHaQBKDUeYMw9Av7HgJRcIZSSukuQmxDNgnX
+      /hWWJnRXUlEkAOUktw43fgXzo7orqRgSgHKTz8DIb2HyS92VVAQJQDlSFoyfhYnzgPz37YYE
+      oFwpBVNX7b1BPq27mrIlAShnSsHqpH1ekJrTXU1ZkgBUgmwS7n5k7xHEjkgAKoWy7ADc/Rhy
+      Kd3VlA0JQKVJLdh7g7k7uispbYYHEickABVJWTB9HUZPQ2ZFdzWlJxqH3r+EaKsEoKJlU/Dg
+      9/DoAlg53dXo549C14/s4eam/ZwGCUClU8ruIRo/CzM37L2D23gCkHgD2k6BL7TpLQmAW2x0
+      md4/B7O3ccUFNI8fWl+3n8ngj9j3WXyHBMBtlIK1aXj0BUxdAyuru6LC80fteVdbjz13xd8g
+      AXArpSC9ApOX7XFFqXndFe1edRu0HrWnl9nmxAISAAFWHhbH7SDMjdijTstFsBYa+mHPYQg3
+      v3BrvxUJgPiWUvZo0/kxmL0JC/cgs6q7qu+raoC6fdA4aN8oZL76kzclAGJrSoHK2yfO86Ow
+      OAErX+u5yhyosVf02k57xQ/F7InECkACILZnIxBrM7D6BFanYG0KknP2xbZCdK+aPghU21v4
+      SDNEWuyLVoFqME2cmCtJAuAWVppLX41wbLCLB0spPCmIt4R4sJSnvbFm68/k1ng0myXRUrv1
+      +0rZK77KQ3oZ1hchs2YPzssm7cMplbcvwinL3mqbXvuvNwi+KvuvP2Ify/vC9uGMYVCsicHk
+      IVUu8eT+KE+mpkl11XNvcp7AnCIeq+feZJZaM8XlqzeIhGN09XYycW+C1eVF4okGJmcV1678
+      kSNvnKS5Lrq5UcOwx9TgsbfaVQ1afrbdkFkhXOLOnTGM1Bx37k99772Ju1eZWV6npq6G//7N
+      x2RTSzyaWyGbyYDhpbY6xJMnkxqqdp7sAVzi4Ik3qautYXFuFisQwowDIR+ehT9S13uYLuMe
+      e+JtvPlOgHhrC/4//YmWRA/NlsHE6CpdXZU5N5GcAwhXk0Mg4WoSAOFqEgDhahIA4WoSAOFq
+      EgDhahIA4WoSAOFqEgDhahIA4WoSAOFqEgDhahIA4WoSAOFqEgDhahIA4WoSAOFqEgDhahIA
+      4WoSAOFqEgDhav8PExivrwjXUzsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
